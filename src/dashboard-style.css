@@ -74,12 +74,17 @@ p{
 li{
     text-transform: capitalize;
 }
+
 .to_do > form {
     text-align: center;
 }
 
 .to_do > h1 {
     text-align: center;
+}
+
+.to_do > ul{
+    list-style-position: inside;
 }
 
 @media (min-width:320px)
