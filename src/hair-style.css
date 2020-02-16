@@ -183,7 +183,7 @@ footer > nav > a{
     height: 48px;
 }
 
-.twiiter:hover{
+.twitter:hover{
     background: url("../src/img/hair/icon-twitter-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
