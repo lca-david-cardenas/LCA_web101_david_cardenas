@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+} 
+
+body{
+    width: 850px;
+    margin: 0 auto;
+}
+
+header{
+    background: url(../src/img/space_butterfly.jpg);
+    background-color: #726969;
+    background-size: 100%;
+    margin: 0 auto;
+    display: flex;
+    color: rgb(230, 230, 230);
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: rgba(230, 230, 230, 1.0);
+    height: 324px;   
+    display: flex;
+}
+
+.info_block
+{
+    background-color: rgba(230, 230, 230, 1.0);
+    width: 270px;
+    height: 324px;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+h2{
+    text-transform: uppercase;
+    font-family: 'Krona One', sans-serif;
+}
+
+p, label, input, button{
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+}
+
+#name{
+    line-height: 1em;
+}
+
+#message{
+    line-height: 5em;
+}
+
+#send{
+    background-color: rgb(77,77,77);
+    color: rgb(230, 230, 230);
+    font-size: 1em;
+    padding: .2em 1em .2em;
+}
+
+#send:hover{
+    opacity: 70%;
+}
+
+@media (min-width: 320px){
+    body{
+        width: 320px;
+    }
+
+
+    main{
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+
+    h1{
+        font-size: 4em;
+    }
+
+}
+
+
+@media (min-width: 768px){
+
+    body{
+        width: 850px;
+    }
+
+    header{
+        height: 450px;
+    }
+
+    h1{
+        font-size: 9em;
+    }
+
+    main{
+        flex-direction: row;
+        justify-content: space-between; 
+        height: 324px;
+    }
+
+
+
+}

@@ -1,0 +1,209 @@
+html{
+    font-size: calc(1vw + 1vh + .5vmin);
+    color: whitesmoke;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    background-image: url("./334616.jpg");
+    background-color: #cccccc;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+   
+}
+
+main{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: teal;
+    min-height: 80vh;
+}
+
+p{
+    padding: 2%;
+}
+
+.greeter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+    text-align: center;
+}
+
+.clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: dimgray;
+}
+
+.to_do{
+    background-color: dimgray;
+    padding: 2%;
+}
+
+.to_do_input{
+    width: 50%; 
+    height: calc(1vw + 1vh + .25vmin);
+}
+
+.calculator{
+    background-color: dimgray;
+  /*  display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%); */
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+
+#display
+{
+  /*  grid-column: 1 / span 5; */
+  height: 20%;
+  width: 100%;
+}
+
+.calc_input{
+    height: 20%;
+    width: 20%;
+}
+
+.date{
+    background-color: dimgray;
+}
+
+li{
+    text-transform: capitalize;
+}
+
+.to_do > form {
+    text-align: center;
+}
+
+.to_do > h1 {
+    text-align: center;
+}
+
+.to_do > ul{
+    list-style-position: inside;
+    padding-inline-start: 4.17%;
+}
+
+@media (min-width:320px)
+{
+    main{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .greeter{
+        margin: 2% 2% 1% 2%;
+    }
+
+    .clock,
+    .calculator,
+    .date,
+    .to_do{
+        margin: 1% 2% 1% 2%;
+    }
+    
+    .calculator{
+        margin: 1% 2% 2% 2%;
+    }
+}
+
+@media(min-width: 768px)
+{
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .greeter{
+        grid-column: 1 / 3 ;
+        margin: 2% 2% 1% 2%;
+    }
+
+    .clock{
+        grid-column: 1;
+        grid-row: 2;
+        margin: 2% 2% 2% 4%;
+    }
+
+    .date{
+        grid-column: 2;
+        grid-row: 2;
+        margin: 2% 4% 2% 2%;
+    }
+
+    .to_do{
+        grid-column: 1;
+        grid-row: 3 / 5;
+        margin: 2% 2% 4% 4%;
+    }
+
+    .calculator{
+        grid-column: 2;
+        grid-row: 3 / 5;
+        margin: 2% 4% 4% 2%;
+    }
+
+}
+
+
+@media(min-width: 996px)
+{ 
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .greeter
+    {
+        grid-column: 1 / 4;
+        grid-row: 1;
+        margin: 2% 2% 1% 2%;
+        
+    }
+
+    .clock
+    {
+        grid-column: 1;
+        grid-row: 2;
+        margin: 3% 3% 3% 6%;
+    }
+
+    .date
+    {
+        grid-column: 1;
+        grid-row: 3;
+        margin: 3% 3% 6% 6%;
+    }
+    
+    .to_do
+    {
+        grid-column: 2;
+        grid-row: 2 / 4;
+        margin: 3% 3% 6% 3%;
+    }
+    
+    .calculator
+    {
+        grid-column: 3;
+        grid-row: 2 / 4;
+        margin: 3% 6% 6% 3%;
+    }
+
+ } 
