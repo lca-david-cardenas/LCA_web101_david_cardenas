@@ -1,6 +1,6 @@
 @font-face {
     font-family: style_label ;
-    src: url(../src/fonts/pollerone/pollerone-webfont.woff);
+    src: url(../fonts/pollerone/pollerone-webfont.woff/);
 }
 
 /*
@@ -42,7 +42,7 @@ header > nav > a:hover, a.focus:link, a.focus:visited{
 
 #description{
     grid-row: 2;
-    background-image: url(../src/img/hair/the-beacon.jpg);
+    background-image: url(../img/hair/the-beacon.jpg);
     background-color: #cccccc;
     background-position: left;
     background-repeat: no-repeat;
@@ -160,7 +160,7 @@ footer > nav > a{
 } 
 
 .g_plus{
-    background: url("../src/img/hair/icon-googleplus.jpg");
+    background: url("../img/hair/icon-googleplus.jpg");
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -169,13 +169,13 @@ footer > nav > a{
 }
 
 .g_plus:hover{
-    background: url("../src/img/hair/icon-googleplus-hover.jpg");
+    background: url("../img/hair/icon-googleplus-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .twitter{
-    background: url("../src/img/hair/icon-twitter.jpg");
+    background: url("../img/hair/icon-twitter.jpg");
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -184,13 +184,13 @@ footer > nav > a{
 }
 
 .twitter:hover{
-    background: url("../src/img/hair/icon-twitter-hover.jpg");
+    background: url("../img/hair/icon-twitter-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .facebook{
-    background: url("../src/img/hair/icon-facebook.jpg");
+    background: url("../img/hair/icon-facebook.jpg");
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -199,13 +199,13 @@ footer > nav > a{
 }
 
 .facebook:hover{
-    background: url("../src/img/hair/icon-facebook-hover.jpg");
+    background: url("../img/hair/icon-facebook-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .pinterest{
-    background: url("../src/img/hair/icon-pinterest.jpg");
+    background: url("../img/hair/icon-pinterest.jpg");
     background-position: center;
     background-repeat: no-repeat;
     display: inline-block;
@@ -214,7 +214,7 @@ footer > nav > a{
 }
 
 .pinterest:hover{
-    background: url("../src/img/hair/icon-pinterest-hover.jpg");
+    background: url("../img/hair/icon-pinterest-hover.jpg");
     background-position: center;
     background-repeat: no-repeat;
 }

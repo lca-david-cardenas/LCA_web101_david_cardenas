@@ -7,7 +7,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 1fr 8fr 1fr;
-    background-image: url("./334616.jpg");
+    background-image: url("../img/334616.jpg");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
