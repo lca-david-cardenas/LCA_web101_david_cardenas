@@ -4,28 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./reset.css"/>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./mobile-style.css">
+  <link rel="stylesheet" href="./styles/reset.css"/>
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/mobile-style.css">
+  <link rel="stylesheet" href="./styles/animate.css">
   <title>My Portfolio</title>
 </head>
   <body>
   <!-- This is a what comment line looks like in HTML -->
   <!-- The rest of your code goes between here... -->
     <header>
-        <img src="http://www.specplast.com.br/assets/img/sample/woocommerce/img/logo/1.png" class="logo" alt="fake logo">
+        <img src="http://www.specplast.com.br/assets/img/sample/woocommerce/img/logo/1.png" class="logo animated rollIn" alt="fake logo">
         <nav>
-            <a class="has-border" href="../src/resume.html">Resume</a>
-            <a class="has-border">About Me</a>
-            <a class="has-border" href="../src/blog.html">My Blog</a>
-            <a class="has-border">Contact Me</a>
+            <div class="animated flipInX" id="logo_inAmimation">
+              <div class="animated flipOutX" id="logo_outAnimation">
+                <img src="img/lca_logo2.png" alt="Lubbock Coding Academy Logo">
+              </div>
+            </div>
+            <a class="has-border animated bounceInDown" id="b1" href="./src/resume.html">Resume</a> 
+            <a class="has-border animated bounceInDown" id="b2">About Me</a>
+            <a class="has-border animated bounceInDown" id="b3" href="./src/blog.html">My Blog</a>
+            <a class="has-border animated bounceInDown" id="b4">Contact Me</a>
         </nav>
     </header>
     <main>
-        <img src="./logo.png" id="profile-pic" alt="Headshot of Me">
-        <h1>Student Name</h1>
+        <img src="./img/logo.png" id="profile-pic" alt="Headshot of Me">
+        <h1 class="animated zoomIn" id="name">Student Name</h1>
         <h2>Student of Web Development</h2>
-        <button id="portfolio" onclick="window.location.href = '../src/portfolio.html';">Portfolio</button>
+        <button class="zoom" id="portfolio" onclick="window.location.href = './src/portfolio.html';">Portfolio</button>
     </main>
 
   <!-- ...and here. -->

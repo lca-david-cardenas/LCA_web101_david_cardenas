@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url(./white_texture.jpg);
+    background-image: url(../img/white_texture.jpg);
     /*background-repeat: no-repeat;*/
     background-size: cover;
     /*font-size: 14px;*/
@@ -10,10 +10,13 @@ body {
     width: 100vw;
   }
   
+
+
   .logo {
     width: 30%;
     height: 80%;
     margin: 3% 10%;
+    animation-duration: 1.0s;
   }
   
   
@@ -24,12 +27,13 @@ body {
   }
   
   main {
-    height: 100%;
+    height: auto;
     width: 100%;
    /* display: grid;
     grid-template-columns: 30% 40% 30%; */
   }
   
+
   nav > a {
     margin: 1% 1% 1%;
     height: 100%;
@@ -95,4 +99,44 @@ body {
     color: white;
     letter-spacing: 2vw;
     font-style: italic;
+  }
+
+  #b1{
+    animation-delay: .5s;
+  }
+  
+  #b2{
+    animation-delay: 1.0s;
+  }
+
+  #b3{
+    animation-delay: 1.5s;
+  }
+
+  #b4{
+    animation-delay: 2.0s;
+  }
+  
+  #name{
+    animation-duration: 3.5s;
+  }
+  
+  #logo_inAnimation
+  {
+    animation-duration: 2s;
+  }
+
+  #logo_outAnimation{
+    animation-delay: 2.5s;
+    animation-duration: 2s;
+  }
+
+  
+  /* zoom animate example from wc3 */
+  .zoom {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
   }
