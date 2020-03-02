@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/portfolio-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Frijole&effect=shadow-multiple" rel="stylesheet">
     <title>My Portfolio</title>
 </head>
 <body>
     <header>    
         <section class="logo">
             <section class="logo_pic">
-                <img id="logo1" src="../img/logo.png">
+                <img id="logo1" src="../img/logo.png" alt="student name logo">
             </section>
             <section class="logo_pic">
-                <img id="logo2" src="../img/lca_logo.png">
+                <img id="logo2" src="../img/lca_logo.png" alt="lubbock coding academy logo">
             </section>
         </section>
         <nav class="site_nav">
-            <a href="#" class="nav_a">resume</a>
-            <a href="#" class="nav_a">about me</a>
-            <a href="#" class="nav_a">my blog</a>
-            <a href="#" class="nav_a">contact me</a>
+            <a href="#" class="nav_a zoom">resume</a>
+            <a href="#" class="nav_a zoom" >about me</a>
+            <a href="#" class="nav_a zoom">my blog</a>
+            <a href="#" class="nav_a zoom">contact me</a>
         </nav>
     </header>
 
-    <a id="dashboard" href="../src/dashboard_calcFlex.html">Dashboard</a>
-    <a id="hair_salon" href="../src/hair.html">Hair Salon</a>
-    <a id="nasa" href="../src/nasa_flex.html">Nasa Info Page</a>
+    <a id="dashboard" class="font-effect-shadow-multiple zoom" href="../src/dashboard_calcFlex.html">Dashboard</a>
+    <a id="hair_salon" class="font-effect-shadow-multiple zoom" href="../src/hair.html">Hair Salon</a>
+    <a id="nasa" class="font-effect-shadow-multiple zoom" href="../src/nasa_flex.html">Nasa Info Page</a>
 
 
     <section class="video">
@@ -37,6 +38,9 @@
     </section>
 
     <form action="#">
+        <fieldset>
+            <legend>Send Message</legend>
+        
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" value=""><br>
         <label for="email">Email:</label><br>
@@ -45,9 +49,10 @@
         <input type="text" id="location" name="location" value=""><br>
         <label for="message">Message:</label><br>
         <textarea name="message" wrap="soft" maxlength="110" style="overflow:hidden; resize:none;"></textarea><br>
-        <input class="button" type="submit" id="clear" value="reset">
-        <input class="button" type="submit" id="send" value="send">
-      </form>
+        <input class="button zoom" type="submit" id="clear" value="reset">
+        <input class="button zoom" type="submit" id="send" value="send">
+            </fieldset>
+    </form>
 
 
 </body>

@@ -8,11 +8,29 @@ body{
     align-items: center;
     width: 90%;
     margin: .5% auto;
+
+    background-image: url(../img/white_texture.jpg);
+    background-color: #cccccc;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
 }
 
 header{
     width: 100%;
 }
+
+.nav_a{
+    
+    font-size: 75%;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 1%;
+    border-radius: 8%;
+    border: 2px solid black;
+}
+
 
 .logo{
 
@@ -68,6 +86,16 @@ textarea {
     height: 6em;
   }
 
+#dashboard, #nasa, #hair_salon{
+    font-size: xx-large;
+    font-family: 'Frijole', sans-serif;
+    text-decoration: none;
+}
+
+#dashboard:hover, #nasa:hover, #hair_salon:hover{
+    color: rgb(14, 197, 219);
+}
+
 /*
     Responsive iframe container from 
     https://blog.theodo.com/2018/01/responsive-iframes-css-trick/
@@ -87,6 +115,17 @@ textarea {
     height: 100%;
     border: 0;
 }
+
+
+  /* zoom animate example from wc3 */
+  .zoom {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+
 
 @media (min-width: 768px){
     #logo1{
