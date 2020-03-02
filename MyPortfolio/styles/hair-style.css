@@ -219,7 +219,14 @@ footer > nav > a{
     background-repeat: no-repeat;
 }
 
-
+  /* zoom animate example from wc3 */
+  .zoom {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1);
+  }
 
 @media (min-width:320px){ 
 
