@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practice Conditionals and Loops</title>
+</head>
+<body>
+    <h1>Project 1: Print Out Each Word</h1>
+    <p>Given an array of words, loop through the array and print out each word.</p>
+    <script>
+        const wordArr = ['waffle', 'whimper', 'sneeze', 'shindig', 'leopard', 'whisper', 'elegant']
+
+        const printOutWord = (arr) => {
+            // your code here
+            for (i = 0; i < wordArr.length; i++)
+            document.write((i+1) + ": " + wordArr[i] +"<br>");
+        }
+
+        //call the function
+        printOutWord(wordArr)
+    </script>
+
+    <!-- divider for next section  -->
+    <hr>
+
+    <h1>Add Numbers</h1>
+    <p>Given two numbers, return the sum of the two numbers.</p>
+    <script>
+        const addNums = (a, b) => {
+            // your code here
+            //output the two vairable passed in and then their sum
+            document.write(a + " + " + b + " = " + (a+b));
+        }
+
+        addNums(3, 8) // => 11
+    </script>
+
+    <!-- divider for next section  -->
+    <hr>
+
+    <h1>Remove Zeros</h1>
+    <p>Given an array of numbers, create and return a new array with all '0's removed.</p>
+    <script>
+        const exampleArr = [1, 0, 9, 18, 3, 0, 0, 9, 70, 44, 0]
+        var newArr = []
+        
+        const removeZeros = (arr) => {
+        // your code here
+
+            //loop the passed in array and if the conent is not zero add it to the new array
+            for ( i=0; i < arr.length; i++){
+                if (arr[i] != 0){
+                    newArr.push(arr[i]);
+                }
+            }
+
+            //writitng output
+            document.write('[');
+
+            //write the contents of the array at index i
+            for ( i=0; i < newArr.length; i++){
+                document.write(" " + newArr[i]);
+                
+                //write a , as long as it is not the last index in the array
+                if (i < newArr.length - 1){
+                    document.write(",");
+                }
+            }
+            //close the array output
+            document.write(']');
+
+        }
+
+        removeZeros(exampleArr) // => [1, 9, 18, 3, 9, 70, 44]
+    </script>
+
+    <!-- divider for next section  -->
+    <hr>
+
+    <h1>Sum of Array Squared</h1>
+    <p>Given the array of numbers: [2, 3, 5, 6, 8] square each number, save them to a new array and return the sum of the new array.</p>
+
+    <script>
+        const myArr =[2, 3, 5, 6, 8]
+        var newArr = []
+        var sum = 0;
+
+
+        const sumSquared = (arr) => {
+            // your code here
+            //loop through the passed array and square the contents of the index using Math.pow() and add to new array
+            for ( i=0; i < arr.length; i++){
+                newArr.push(Math.pow(arr[i],2));
+            }
+            //loop the array with squares and add their sum
+            for ( i=0; i < newArr.length; i++){
+                    sum += newArr[i];
+            }
+            //output sum
+            document.write(sum);
+        }
+
+        sumSquared(myArr) // => 136
+    </script>
+
+</body>
+</html>
