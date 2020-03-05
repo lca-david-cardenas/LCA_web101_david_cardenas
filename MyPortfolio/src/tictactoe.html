@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM TicTacToe</title>
+    <link rel="stylesheet" href="../styles/tictactoe-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Knewave&display=swap" rel="stylesheet">
+    <script src="../js/tictactoe.js"></script>
+</head>
+<body id="tictactoe-game">
+    <h1>JavaScript TicTacToe</h1>
+
+    <section>
+        <button type="button" id="Xbutton" onclick="changeMarkerToX()"><h2>X</h2></button>
+        <button type="button" id="Obutton" onclick="changeMarkerToO()"><h2>O</h2></button>
+    </section>
+
+    <section>
+        <button type="button" id="reset" class="no_show" onclick="reset()"><h2>Reset</h2></button>
+    </section>
+
+    <p id="gamelabel"> Choose your marker and click a square.</p> 
+
+    <section class="gameboard">
+        <div id="box10" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box11" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box12" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box20" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box21" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box22" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box30" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box31" class="gamesquare" onclick="placemark(this.id)"></div>
+        <div id="box32" class="gamesquare" onclick="placemark(this.id)"></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: .5% auto;
+    padding-bottom: 2%;
+
+}
+
+.gameboard{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.gamesquare{
+    height: 100px; 
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Knewave', sans-serif;
+    font-size: 3em;
+}
+
+#box11, #box21, #box31{
+    border-left: solid 4px black;
+    border-right: solid 4px black;
+}
+
+#box20, #box21, #box22{
+    border-top: solid 4px black;
+    border-bottom: solid 4px black;
+}
+
+p, h2{
+    font-family: 'Knewave', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+.show{
+    visibility: visible;
+}
+
+.no_show{
+    visibility: hidden;
+}
