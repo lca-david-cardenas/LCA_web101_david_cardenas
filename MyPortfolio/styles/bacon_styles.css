@@ -37,17 +37,20 @@ body{
 }
 
 h1{
+    font-family: "Bitter", serif;
     font-size: 5em;
     margin-top: 8%;
 }
 
 h2{
+    font-family: "Bitter", serif;
     font-size: 3em;
     padding-bottom: 5%;
     text-transform: capitalize;
 }
 
 p{
+    font-family: "Scada", serif;
     font-size: 1.5em;
     padding-bottom: 2em;
 }
