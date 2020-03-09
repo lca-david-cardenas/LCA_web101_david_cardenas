@@ -1,0 +1,278 @@
+.theme-line-0 {
+    --layer1: whitesmoke;}
+  
+.theme-line-1 {
+    --layer1: whitesmoke;
+    --layer3: whitesmoke;
+    --layer2: whitesmoke;}
+  
+.theme-line-2 {
+    --layer2: whitesmoke;
+    --layer1: whitesmoke;}
+
+
+*{
+    box-sizing: border-box;
+}
+
+.logo_animated{
+    animation-duration: 5s;
+}
+
+  
+/* zoom animate example from wc3 */
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+  
+  .zoom:hover {
+    transform: scale(1.1);
+  }
+
+body{
+    min-height: 100vh;
+    width: auto;
+    display: grid;
+    grid-template-rows: 19% 81%;
+}
+
+h1{
+    font-size: 5em;
+    margin-top: 8%;
+}
+
+h2{
+    font-size: 3em;
+    padding-bottom: 5%;
+    text-transform: capitalize;
+}
+
+p{
+    font-size: 1.5em;
+    padding-bottom: 2em;
+}
+
+.bottom > a{
+    text-decoration: none;
+    color: unset;
+}
+
+p > a{
+    text-decoration: none;
+    color: rgb(129,111,151);
+    font-weight: bold;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 70%;
+    align-items: center;
+    text-align: center;
+    padding: 2% 0 10%;
+    margin-top: 8%;
+}
+
+.art_card{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 85%;
+    align-items: center;
+    text-align: center;
+    padding: 2% 0 10%;
+    margin-top: 8%;
+}
+
+.about_card{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 85%;
+    align-items: center;
+    text-align: center;
+    padding: 2% 0 10%;
+    margin-top: 8%;
+}
+
+.video{
+    width: 80%;
+    height: auto;
+    border: solid 2px black;
+    margin: 0% 10% 5%;
+
+}
+
+.img{
+    width: 80%;
+    height: auto;
+    margin: 0 10% 5%;
+}
+
+.top{
+    /* background-color: rgb(51, 168, 221); */
+    color: white;
+    justify-content: center;
+    padding-top: 2%;
+    align-items: center;
+    text-align: center;
+}
+
+#nav{
+    display: flex;
+    justify-content: center;
+    height: 2em;
+    margin-bottom: 2em;
+}
+
+#nav > a{
+    padding: 0 2em;
+}
+
+.icon_size
+{
+    width: 3em;
+    height: 3em;
+}
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(257,255,256);
+}
+
+#c1{
+    border-top: solid calc(1vw + 1vh + .5vmin) rgb(51, 168, 221);
+}
+
+#c2{
+    border-top: solid calc(1vw + 1vh + .5vmin) rgb(244, 103, 49);
+}
+
+#c3{
+    border-top: solid calc(1vw + 1vh + .5vmin) rgb(43, 205, 192);
+}
+
+#c4{
+    border-top: solid calc(1vw + 1vh + .5vmin) rgb(129,111,151);
+}
+
+.resp-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+#index{
+    background-color: rgb(69, 176, 144);
+}
+
+#about{
+    background-color: rgb(129,111,151);
+
+}
+
+#article1{
+    background-color: rgb(51, 168, 221);
+}
+
+#article2{
+    background-color: rgb(244, 103, 49);
+}
+
+#article3{
+    background-color: rgb(43, 205, 192);
+}
+
+@media (min-width: 992px){
+
+    body{
+        grid-template-rows: 23% 77%;
+    }
+
+    .bottom{
+        background-color: black;
+        color: white;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    #nav{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .icon_size{
+        width: 2.5vw;
+        height: 2.5vw;
+    }    
+
+    h1{
+        margin-top: unset;
+        padding-top: unset;
+        padding-bottom: 5%;
+        font-size: calc(5vw + 5vh + .5vmin);
+    }
+
+    h2{
+        font-size: calc(2vw + 2vh + 1vmin);  
+    }
+
+    p{
+        font-size: calc(1vw + 1vh + .5vmin);
+    }
+
+    #pilot_title{
+        margin-bottom: 7.5%;
+    }
+    #tec9_title{
+        margin-bottom: 14%;
+    }
+    #ez_title{
+        margin-bottom: 9.5%;
+    }
+
+    .index_title{
+        margin-bottom: 30%;
+    }
+
+    .card{
+        width: 20%;
+        margin-top: unset;
+    }
+
+    .art_card{
+        text-align: left;
+        margin-top: unset;
+    }
+
+    .about_card{
+        margin-top: unset;
+    }
+
+    .video{
+        width: 60%;
+    }
+
+    .img{
+        width: 45%;
+    }
+
+    #pilots{
+        float: left;
+    }
+
+    #tec9{
+        float: right;
+    }
+}
