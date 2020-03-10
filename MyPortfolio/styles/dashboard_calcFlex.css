@@ -49,10 +49,13 @@ p{
     padding: 2%;
 }
 
+/*
 .to_do_input{
-    width: 50%; 
+    width: 70%; 
     height: calc(1vw + 1vh + .25vmin);
 }
+*/
+
 
 .calculator{
     background-color: dimgray;
@@ -81,22 +84,111 @@ p{
     background-color: dimgray;
 }
 
+/*
 li{
     text-transform: capitalize;
 }
+*/
 
 .to_do > form {
     text-align: center;
 }
 
+/*
 .to_do > h1 {
+*/
+#header{  
     text-align: center;
+    font-size: 1.5em;
+    color: white;
+    margin: 0px auto;
+    padding: 2%;
 }
 
 .to_do > ul{
     list-style-position: inside;
     padding-inline-start: 4.17%;
+
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    list-style-type: none;
+    width: 20%;
+    margin: 0px auto;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
 }
+
+
+
+
+
+
+/* todo APP copied */
+#list_section {
+    text-align: center;
+  }
+
+/*
+.to_do > li{
+ */
+li{
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    list-style-type: none;
+    width: 75%;
+    margin: 0px auto;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding: 1%;
+    margin-bottom: 10px;
+}
+
+.item {
+    background-color: #fff;
+    color: #000;
+}
+
+input[type='text'] {
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 3px;
+}
+
+input[type='submit'] {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+}
+
+#newItemButton {
+    display: none;
+}
+
+#itemField {
+    margin-top: 60px;
+    width: 40%;
+}
+
+.to_do > p{
+
+    background-color: #fff;
+    color: #666;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px auto 20px auto;
+    width: 75%;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
 
 @media (min-width:320px)
 {

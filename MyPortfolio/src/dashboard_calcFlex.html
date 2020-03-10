@@ -37,6 +37,8 @@
             else return "AM";
         }
     </script>
+    <script src="../js/jquery-3.4.1.min.js"></script>
+    <script src="../js/todo_app.js"></script>
 </head>
 <body onload="startTime()">
     <main>
@@ -158,19 +160,17 @@
               </div>
         </article>
         <article class="to_do">
-            <form class="form-inline" action="#">
-                <label for="email">To Do:</label>
-                <input type="text" id="to_do_input" placeholder="Enter To Do" name="entry">
-                <button type="submit">Submit</button>
-            </form>
-            <h1>To Do List</h1>
+          <div id="list_section">
+            <h1 id="header">To-do list</h1>
             <ul>
-                <li>Wireframe Mobile Design</li>
-                <li>Wireframe Tablet Design</li>
-                <li>Scan wireframe drawings to image folder</li>
-                <li>Use Method 2 for Media Queries</li>
-                <li>Use CSS grid</li>
+              <li class="item">Buy movie tickets</li>
             </ul>
+            <div id="newItemButton"><button href="#">new item</button></div>
+            <form id="newItemForm">
+              <input type="text" id="itemField" placeholder="Item" />
+              <input type="submit" id="add" value="add" />
+            </form>
+          </div>
         </article>
         <article class="calculator">
             <input type="text" name="display" id="display" value="" />
